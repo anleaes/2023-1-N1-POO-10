@@ -6,13 +6,13 @@ class Cinema:
         self._endereco = endereco
         
     def get_nome(self):
-        return self.nome
+        return self._nome
 
     def set_nome(self, nome):
-        self.nome = nome
+        self._nome = nome
     
     def get_endereco(self):
-        return self.endereco
+        return self._endereco
 
     def set_endereco(self, endereco):
-        self.endereco = endereco    
+        self._endereco = endereco    
