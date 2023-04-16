@@ -8,25 +8,25 @@ class Cliente:
         self._email = email
         
     def get_nome(self):
-        return self.nome
+        return self._nome
 
     def set_nome(self, nome):
-        self.nome = nome
+        self._nome = nome
     
     def get_endereco(self):
-        return self.endereco
+        return self._endereco
 
     def set_endereco(self, endereco):
-        self.endereco = endereco   
+        self._endereco = endereco   
     
     def get_telefone(self):
-        return self.telefone
+        return self._telefone
 
     def set_telefone(self, telefone):
-        self.telefone = telefone
+        self._telefone = telefone
+        
     def get_email(self):
-        return self.email
+        return self._email
 
     def set_email(self, email):
-        self.email = email                  
-        
+        self._email = email 
