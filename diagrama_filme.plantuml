@@ -1,4 +1,10 @@
-@startuml filme
+@startuml Cinema
+
+class cinema{
+-nome_cinema string
+-local string
++contrutor(nome_cinema, local)
+}
 
 class pessoa{
 -nome string
@@ -24,7 +30,9 @@ class sessao{
 +contrutor(horario, sala, preco, filme)
 }
 
-
+pessoa "1" --* "1" cinema
+cinema "1" --* "*" filme
+cinema "1" --* "*" sessao
 pessoa "1" --* "1" filme
 filme "1" --* "*" sessao
 pessoa "1" --* "1" sessao
