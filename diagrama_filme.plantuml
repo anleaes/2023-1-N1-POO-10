@@ -1,0 +1,32 @@
+@startuml filme
+
+class pessoa{
+-nome string
+-cpf int
+-idade int
++contrutor(nome, cpf, idade)
+}
+
+class filme{
+-titulo string
+-genero string
+-classif string
+-duracao int
+-sessoes int
++contrutor(titulo, genero, classif,duracao,sessoes)
+}
+
+class sessao{
+-horario float
+-sala int
+-preco int
+-filme string
++contrutor(horario, sala, preco, filme)
+}
+
+
+pessoa "1" --* "1" filme
+filme "1" --* "*" sessao
+pessoa "1" --* "1" sessao
+
+@enduml
