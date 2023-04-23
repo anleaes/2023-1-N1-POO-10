@@ -30,3 +30,9 @@ class Filme:
 
     def set_diretor(self, diretor):
         self._diretor = diretor
+        
+    def get_info(self):
+        atributos = vars(self)
+        info = "\n".join(f"{key}: {value}" for key, value in atributos.items())
+        return info
+
