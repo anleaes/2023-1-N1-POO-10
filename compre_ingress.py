@@ -1,4 +1,4 @@
-from sessao import Sessao
+from class_sessao.py import Sessao
 
 class compra_ingresso:
     def _init_(self, forma_pagamento: int, preco: float, assento: int, TPingresso: int, sessao: Sessao):
