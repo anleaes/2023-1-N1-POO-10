@@ -1,20 +1,20 @@
 from class_sessao.py import Sessao
 
 class compra_ingresso:
-    def _init_(self, forma_pagamento: int, preco: float, assento: int, TPingresso: int, sessao: Sessao):
+    def _init_(self, pagamento: int, preco: float, assento: int, TPingresso: int, sessao: Sessao):
 
-        self.__forma_pagamento = forma_pagamento
+        self.__pagamento = pagamento
         self.__preco = preco
         self.__TPingresso = TPingresso
         self.__assento = assento
         self.__sessao = sessao
        
 
-    def get_forma_pagamento(self) -> int:
-        return self.__forma_pagamento
+    def get_pagamento(self) -> int:
+        return self.__pagamento
 
-    def set_forma_pagamento(self, forma_pagamento: int):
-        self.__forma_pagamento = forma_pagamento
+    def set_pagamento(self, pagamento: int):
+        self.__pagamento = pagamento
 
     def get_assento(self) -> int:
         return self.__assento
