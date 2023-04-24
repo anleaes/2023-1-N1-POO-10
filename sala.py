@@ -1,4 +1,4 @@
-class sala:
+class Sala:
     def __init__(self, numero: int, capacidade: int, tipo: str):
         self._numero = numero
         self._capacidade = capacidade

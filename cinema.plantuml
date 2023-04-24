@@ -1,0 +1,39 @@
+@startuml cinema
+class Filme{
+-titulo: string
+-genero: string
+-duracao: int
+-diretor: string
++construtor(titulo, genero, duracao, diretor)
+
+}
+
+class Sala{
+-numero: int
+-capacidade: int
+-tipo: string
++contrutor(numero, capacidade, tipo)
+}
+
+class Sessao{
+
+horario: datetime
+preco: float
+filme: Filme
+sala: Sala
++contrutor(horario, preco, filme, sala)
+}
+
+class Compra_ingresso{
+sessao: Sessao
+assento
++contrutor(sessao, assento)
+
+}
+
+Sessao *---* Filme
+Sessao *---* Sala
+Sessao o-- Compra_ingresso
+
+
+@enduml
